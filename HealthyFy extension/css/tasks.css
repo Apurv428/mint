@@ -1,0 +1,300 @@
+/* RESET STYLES*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+ font-family: 'Slabo 27px', serif;
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    color:#00FFFF;
+    text-align: center;
+    background: linear-gradient(45deg, #000000, #a3462fc9);
+    background-size: 100% 100%;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
+    
+    vertical-align:baseline;
+    text-transform: uppercase;
+
+
+}
+@-webkit-keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+ol, ul {
+   list-style: none;
+   background:transparent;
+}
+
+
+/* ================================ Layout ================================ */
+
+body {
+    /*background-color: #499cc1;*/
+    text-align: left;
+    /*color: #333;*/
+    background:transparent;
+font-family: 'Slabo 27px', serif;
+}
+.wrapper {
+    position: relative;
+    width: 500px;
+    margin:0 auto;
+    /*background: #fcfcfc;*/
+    background:transparent;
+}
+
+/* ================================ EO Layout ================================ */
+
+/* ================================ Header ================================ */
+
+header {
+font-family: 'Slabo 27px', serif;
+    
+    /*color: #555;*/
+    text-align: center;
+    /*text-shadow: 0 0 1px #499CC1;*/
+    background:transparent;
+}
+
+/* ================================ EO Header ================================ */
+
+/* ================================ Content ================================ */
+
+.ToDo{
+    padding: 0 30px 10px 30px;
+    background:transparent;
+}
+
+.add{
+    width: 350px;
+    height:35px;
+    border: 1px solid white;
+    text-align: center;
+font-family: 'Slabo 27px', serif;
+    color: white;
+    background:transparent;
+}
+
+.add-btn{
+    height: 42px;
+    border: 1px solid #58a3c7;
+    background-color: #58a3c7;
+font-family: 'Slabo 27px', serif;
+    color: #fff;
+    margin: 0;
+    padding: 0 16px;
+    cursor: pointer;
+}
+
+/*======LIST======*/
+
+.task-list{
+    margin: 10px 0 30px 0;
+    /*color: #4a9ac0;*/
+    background:transparent;
+}
+
+.task-list li {
+    /*background: #f0f9ff;*/
+    padding:10px 10px 4px;
+    border-bottom: 1px solid #e9e9e9;
+    background:transparent;
+}
+.task-list .done {
+    /*background: #f9fdff;*/
+    background:transparent;
+}
+
+.task-list li:first-child{
+    border-top: 1px solid #e9e9e9;
+    background:transparent;
+}
+
+.task-list .toggle {
+    margin:0 10px 0 0;
+    vertical-align: top;
+    background:transparent;
+}
+
+.task-title {
+    position: relative;
+    top:-3px;
+    display: inline-block;
+    padding:2px;
+    border:1.5 solid white;
+    width: 352px;
+    text-align: left;
+    line-height: 13px;
+    background:transparent;
+}
+
+.editing {
+    background-color: #fff;
+}
+.done .editing {
+    text-decoration: line-through;
+    border-color: #f0f9ff;
+}
+
+.done .task-title {
+    text-decoration: line-through;
+    background:transparent;
+}
+
+.remove{
+    float: right;
+    width: 12px;
+    height: 12px;
+    text-indent: -9999px;
+    background: url(../images/sprite.png) no-repeat 0 -11px;
+    margin: 0 0 0 10px;
+}
+
+.remove:hover{
+    background: url(../images/sprite.png) no-repeat 0 0;
+}
+
+.edit{
+    float: right;
+    width: 12px;
+    height: 13px;
+    text-indent: -9999px;
+    background: url(../images/sprite.png) no-repeat 0 -34px;
+    margin: 0;
+}
+
+.edit:hover{
+    background: url(../images/sprite.png) no-repeat 0 -22px;
+}
+/* ======EO LIST====== */
+
+.bottom {
+    overflow: hidden;background:transparent;
+
+}
+
+.progress-bar {
+    display: none;
+    float: left;
+    width: 200px;
+    height: 26px;
+    border: 1px solid white;
+    overflow: hidden;
+    background:transparent;
+    
+}
+
+.progress-status {
+    height: 100%;
+    background-color: white;
+    -webkit-transition:all .5s ease-in;
+    transition:all .5s ease-in;
+    background:transparent;
+}
+
+.progress-status p {
+    width: 200px;
+    text-align: center;
+    color: white;
+    line-height: 25px;
+    background:transparent;
+}
+
+.progress-status p span {
+    font-weight: bold;
+    background:transparent;
+}
+
+.remove-checked {
+    display: none;
+    text-decoration: none;
+    float: right;
+    background: #4a9ac0;
+    margin: 0 0 0 20px;
+    padding: 6px 10px 6px 20px;
+    /*background:transparent;*/
+}
+
+.remove-checked span {
+    display: inline-block;
+    background: #4a9ac0 url("../images/sprite.png") no-repeat right -47px;
+    font: 14px/14px Arial, sans-serif;
+    color: #fff;
+    padding: 0 20px 0 0;
+    background:transparent;
+}
+
+/* ================================ EO Content ================================ */
+
+
+/* ================================ Footer ================================ */
+
+footer {
+    display: none;
+    margin: 30px 0 5px 0;
+    color: #999;
+    text-align: center;
+    font-size: 11px;
+    background:transparent;
+}
+footer a {
+    color: #777;
+    background:transparent;
+}
+
+/* ================================ EO Footer ================================ */
+
+/* ================================ Scroll Bar ================================ */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(0,150,230,0.8);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.7);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(0,150,230,0.4);
+}

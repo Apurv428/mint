@@ -1,0 +1,286 @@
+
+body
+{
+  color:white;
+  border-style: none;
+  text-align: center;
+font-family: 'Slabo 27px', serif;
+  background: linear-gradient(45deg,  #000000, #a3462fc9);
+  
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
+	background-size: 400% 400%;
+	-webkit-animation: gradient 15s ease infinite;
+	        animation: gradient 15s ease infinite;
+          text-transform: uppercase;
+}
+
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+h1{
+  font-family: URW Chancery L, cursive;
+  color: coral;
+}
+
+h3 {
+text-align: center;
+  margin: 0 15px 15px 15px;
+  font-size: 16px;
+font-family: 'Slabo 27px', serif;
+}
+
+h5 {
+  text-align: center;
+  margin: 0 15px 15px 15px;
+  font-size: 22px;
+  color: #f7f2f2;
+  text-shadow:white;
+font-family: 'Slabo 27px', serif;
+}
+
+h4 {
+text-align: center;
+  margin: 5px;
+  color: whitesmoke;
+  font-size: 13px;
+font-family: 'Slabo 27px', serif;
+}
+
+.hidden {
+  display: none;
+}
+
+.header {
+  padding: 2%;
+  text-align: center;
+font-family: 'Slabo 27px', serif;
+}
+
+.portal_logo {
+
+    height: 100px;
+    width: 100px;
+    /*align-self: center;*/
+font-family: 'Slabo 27px', serif;
+}
+
+.user {
+  text-align: center;
+  color: white;
+font-family: 'Slabo 27px', serif;
+}
+
+.buttons img {
+  height: 35px;
+  width: 35px;
+  padding: 4px 4px;
+  position: relative;
+  /*top: 5px;*/
+font-family: 'Slabo 27px', serif;
+}
+
+.buttons-container {
+  width: 500px;
+  height: 100px;
+  background-size: 100%; 
+font-family: 'Slabo 27px', serif;
+}
+
+.buttons {
+  margin: 0;
+  list-style: none;
+  padding-top: 15px;
+font-family: 'Slabo 27px', serif;
+}
+
+.buttons a {
+font-family: 'Slabo 27px', serif; 
+  color: Black;
+  text-decoration: none;
+  display: block;
+  line-height: 40px;
+font-family: 'Slabo 27px', serif;
+}
+
+.buttons>li {
+  position: relative;
+  left: 0.5px;
+  float: left;
+  width: 54px;
+font-family: 'Slabo 27px', serif;
+}
+
+.buttons>li:hover {
+  border-radius: 20%;
+  background-color: #d9d9d9;
+  transition: background-color 0.2s;
+font-family: 'Slabo 27px', serif;
+}
+
+.buttons li:hover>ul {
+  display: inline;
+  height: auto;
+  opacity: 1;
+font-family: 'Slabo 27px', serif;
+}
+
+.dropdown-content {
+
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 160px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+font-family: 'Slabo 27px', serif;
+}
+
+.dropdown-content>li {
+  position: relative;
+  height: 40px;
+  background-color: white;
+  transition: background-color 0.2s;
+font-family: 'Slabo 27px', serif;}
+
+.dropdown-content>li:hover {
+  background-color: #d9d9d9;
+  transition: background-color 0.2s;
+font-family: 'Slabo 27px', serif;
+}
+
+.second-dropdown-content {
+  position: absolute;
+  top: 0;
+  right: -120px;
+  width: 120px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity linear 0.15s;
+font-family: 'Slabo 27px', serif;
+}
+
+.second-dropdown-content>li {
+  height: 40px;
+  background-color: white;
+font-family: 'Slabo 27px', serif;
+}
+
+.second-dropdown-content>li:hover {
+  background-color: #d9d9d9;
+  transition: background-color 0.2s;
+font-family: 'Slabo 27px', serif;
+}
+
+.show {
+  display: block;
+font-family: 'Slabo 27px', serif;
+}
+.btnGroup button {
+    background: none;
+    border: 2px solid white;
+    color: #aabe39;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    width: 100%;
+    font-family: 'Slabo 27px', serif;    font-size: medium;
+    font-weight: bold;
+}
+
+.btnGroup button:hover {
+    background: #d3de95;
+    transition: 0.3s;
+}
+.reminderText {
+    margin: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+font-family: 'Slabo 27px', serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #00FFFF;
+}
+
+.reminderHeader {
+font-family: 'Slabo 27px', serif;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    background-color: #eff8bd;
+    margin: auto;
+    width: 250px;
+    height: 35px;
+    border-radius: 10px;
+}
+
+.resetExerciseButton button {
+    background: none;
+    border: 4px solid lightcoral;
+    cursor: pointer;
+    margin: 10px auto;
+    display: block;
+    width: 50%;
+    font-family: 'Slabo 27px', serif;
+    font-size: large;
+    font-weight: bold;
+    color: #b7b49a;
+    border-radius: 10px;
+}
+
+.resetExerciseButton button:hover {
+    background: rgb(240, 192, 192);
+    transition: 0.3s;
+}
+
+.resetExerciseButton {
+    padding: 20px 0px;
+}
+
+.exerciseTitle {
+    text-align: center;
+    font-family: 'Slabo 27px', serif;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+}
+
+.exerciseTimerText {
+    text-align: center;
+    font-family: 'Slabo 27px', serif;
+    font-size: x-large;
+    font-weight: bolder;
+    color: white;
+  
+
+}

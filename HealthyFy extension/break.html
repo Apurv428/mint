@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" style="width:400px; height:450px">
+  <head>
+    <script src="js/timer.js"></script>  
+    <title>Timer Settings</title>
+    <link rel="stylesheet" href="css/options.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+  </head>
+  
+  <body style="margin-left: 35px" >
+<div align="center"><a class="back" href="home.html"><h4 style="color:white">< back</h4></a> </div>
+    <div align="center">
+      <img style="height: 60px; width: 60px; align-self: center;" src="icons/clk2.png" alt="One Stop icon">
+      <h1>TIME MANAGER</h1>
+      
+    </div>
+    <h3>Let me know which tab you wants to close ?</h3>
+
+    <form style="font-size: 15px">
+      <input type="radio" id="op1" name="closingTabs" value="all"/>
+      <label for="op1"><span></span>All tabs in all windows</label>
+      <br>      
+      <input type="radio" id="op2" name="closingTabs" value="allCurrentWindow"/>            
+      <label for="op2"><span></span>All tabs in current window</label>
+      <br> 
+      <input type="radio" id="op3" name="closingTabs" value="recent"/>
+      <label for="op3"><span></span>All tabs opened after timer set</label>
+      <br>
+      <input type="radio" id="op4" name="closingTabs" value="this"/>
+      <label for="op4"><span></span>This tab only</label>
+      <br> 
+      <br> 
+      <h3>Duration </h3>
+      <input type="number" name="time" placeholder="Enter here..." min="0" value="0" required><b> (in minutes).</b> 
+      <br> 
+      <button type="submit" id="apply" class="save-button" style="height: 30px">Done</button>
+    </form>
+    <br>
+    <br>
+    
+  </body>
+
+</html>

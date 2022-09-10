@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" style="width:400px; height:450px">
+  <head>
+    <title>Take Note</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="js/prettify/prettify.css">
+    <script type="text/javascript" src="js/beautify.js"></script>
+    <script type="text/javascript" src="js/prettify/prettify.js"></script>
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <script src="js/popup.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <a class="back" href="home.html"><h4 style="color:white;background:transparent">< back</h4></a>
+    <div id="single">
+      <div class="title">
+        <h1 id="current" style="color: #00FFFF">Current Page</h1>
+      </div>
+    <div id="points" style="text-align: left;">
+          <p id="placeholder" style="text-align: center;color: #00FFFF">Take some notes!</p>
+      <ul class="codeback">
+      </ul>
+    </div>
+     </div>
+
+    <div id="all">
+        <div class="title">
+          <h1 style="color: #00FFFF"> Your Saved Notes </h1>
+        </div>  
+        <div id="sites" style="text-align: left;">
+        <ul>
+        </ul>
+      </div>
+    </div>
+
+    <div id="specific">
+      <div class="title">
+        <h1 id="spec"></h1> &nbsp; &nbsp; 
+        <img src="images/edit.png" id="editSpec" />
+      </div>  
+      <div id="specificPoints" style="text-align: left;">
+          <p id="placeholder2" style="text-align: center;">Take some notes!</p>
+        <ul class="codeback" id="pt">
+        </ul>
+      </div>
+    </div>
+
+    <div id="form">
+      <form id="editForm">
+        <textarea id="noteInput" type="text" name="newNote" value="123"></textarea>
+        <br><br>
+        <input class="formbtn" type="submit" value="Submit">
+        <input class="formbtn" type="button" value="Cancel">
+      </form>
+    </div>
+
+
+    <section class="footer">
+      <div class="one">
+          <button class="btn1" id="showHome"></button>
+      </div>
+      <div class="two">
+          <button class="btn2" id="showSingle"></button>
+      </div>
+    </section>
+  </body>
+</html>

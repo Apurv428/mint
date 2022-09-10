@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Mint - Art Therapy</title>
+
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="{{url_for('static', filename='logo copy.png')}}" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="/assets/css/board.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+
+    <!-- ChatBot -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.convform.css" />
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.convform.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+
+  </head>
+  <body>
+    <h1 class="board">Board<span><a href="/">Home</a></span></h1>
+    <div id="paintArea">
+      <canvas id="canvas"></canvas>
+    </div>
+    <div class="options">
+      <div class="tools" id="tools-section">
+        <div class="tools-row">
+          <div class="tools-wrapper">
+            <h5><span id="tool-type"></span> Size:</h5>
+            <input type="range" id="pen-slider" value="4" />
+          </div>
+          <div class="tools-wrapper">
+            <h5>Color:</h5>
+            <input type="color" id="color-input" />
+          </div>
+          <div class="tools-wrapper">
+            <h5>Background Color:</h5>
+            <input type="color" id="color-background" />
+          </div>
+        </div>
+        <div class="tools-row">
+          <button id="button-clear">Clear</button>
+          <button id="button-pen">Pen</button>
+          <button id="button-erase">Erase</button>
+          <button id="button-save">Save</button>
+        </div>
+      </div>
+    </div>
+    <!-- Script-->
+      <script src="assets/js/board.js"></script>
+    <script>
+      (function(d){var s = d.createElement("script");s.setAttribute("data-account", "6jbDoxELNO");s.setAttribute("src", "https://cdn.userway.org/widget.js");(d.body || d.head).appendChild(s);})(document)</script>
+  <noscript>Please ensure Javascript is enabled for purposes of <a href="https://userway.org">website accessibility</a></noscript>
+      </script>
+  </body>
+</html>

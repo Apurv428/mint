@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="css/tasks.css" media="all" />
+        <script src="js/jquery.js"></script>
+        <script src="js/app.js"></script>
+        <title>ToDo</title>
+
+        <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.4.0/annyang.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/SpeechKITT/1.0.0/speechkitt.min.js"></script> -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+        
+    </head>
+
+    <body>
+        
+    
+        <a class="back" href="home.html"><h4 style="color:white;background:transparent">< back</h4></a> 
+        <div class="container"> 
+        <section class="wrapper">
+            <br>
+            <h1 style="background:transparent;color:coral; font-size: 20px ; font-family: URW Chancery L, cursive;">Task manager</h1>
+            <img style="height: 60px; width: 60px; align-self: center;background:transparent" src="icons/diary.png" alt="One Stop icon">
+            <header ><h1 style="background:transparent; color:#be6e39;">Add your Tasks !</h1></header>
+        <!-- content -->
+        <br>
+        <br>
+
+            <div class="ToDo">
+                <form action="#" spellcheck='false'style="background:transparent;">
+                <!-- <label for="task-input">Type</label> -->
+                    <input type="text" id="task-input" placeholder='what needs to be done?' class="add" />
+                    <input type="submit" id="task-submit" value="+" class="add-btn"/>
+                    <!-- <button class="voice-btn"><i class="mic fa fa-microphone"></i></button> -->
+                </form>
+                <ul class='task-list'></ul>
+                <div class="bottom">
+                    <div class="progress-bar">
+                        <div class="progress-status">
+                            <p><span class='tasks-left'>0</span> of <span class='tasks-total'>0</span> tasks done</p>
+                        </div>
+                    </div>
+                    <a href='#' class="remove-checked"><span>Remove checked</span></a>
+                </div>
+            </div>
+        <!-- EO content -->
+            
+        </section>
+    </body>
+    
+</html>

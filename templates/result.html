@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mint - Results</title>
+  <meta name="description" content="Mint a 3 minute depression test">
+  <meta name="keywords" content="depression test using Machine learning">
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+  <link href="/assets/css/d.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+</head>
+
+<body id="myPage">
+  <!--banner-->
+  <h1 style="background: black; color:white;text-align:center;"><a href="/" style="text-decoration: none;">Go back to Home</a></h1>
+  <section>
+    <div class="bg-color">
+      <div class="container">
+        <div class="row">
+          <div class="banner-info">
+            <div class="banner-text text-center">
+              {% block code_block %}<h1 class="white">{{result}}</h1>{% endblock %}
+              <p>This depression test is based on the Depression Screening Test based on PHQ9</p>
+            </div>
+            <div class="overlay-detail text-center">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ banner-->
+
+
+  
+ 
+
+
+  <script src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
+  <script src="{{url_for('static',filename='js/jquery.easing.min.js')}}"></script>
+  <script src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
+  <script src="{{url_for('static',filename='js/custom.js')}}"></script>
+
+
+
+
+</body>
+
+</html>
